@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <title>Checador</title>
+</head>
+
+<body>
+    <section class="contenedor">
+        <div id="fondo-log">
+            <img src="img/fondo.png">
+        </div>
+        <!-- el menu de navegacion por el momento solo tendra la seccion ""cerrar sesion"", osea se ampliara a futuro la app -->
+        <section class="header">
+            <div class="nav-toggle">
+                <div class="nav-toggle-bar"></div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <a href="index.html">
+                        <li><i class="fas fa-power-off"></i>Cerrar sesión</li>
+                    </a>
+                </ul>
+            </nav>
+            <div id="logo">
+                <img src="img/logo-index.png">
+            </div>
+        </section>
+        <!-- No se que tan viable sea poner de principio la ubicacion o ya despues de tomarla en el modal, pero creo que la fecha y hora si deben de ir -->
+        <section class="text-info">
+            <h1 class="saludo">Hola, Antonio Maldonado</h1>
+            <h2 class="fecha">17 de Noviembre</h2>
+            <h2 class="hora"> <strong>Hora:</strong> 8:57 am</h2>
+            <h2 class="ubicacion"> <strong>Tu ubicación es: </strong>Eje Central Lázaro Cárdenas 1201</h2>
+            <hr id="separador">
+        </section>
+        <!-- cada seccion de checador deja la hora registrada asi como en salida a comer y regreso de comida -->
+        <a href="start-modal.html">
+            <section class="checador1-active">
+                <div>
+                    <h1 class="arrive">Registra tu entrada</h1>
+                </div>
+                <div>
+                    <h2 class="horafija">Hora</h2>
+                </div>
+                <div> <i class="fas fa-sign-in-alt fa-4x entrada"></i>
+
+                </div>
+            </section>
+        </a>
+        <section class="checador2-none">
+            <div>
+                <h1 class="lunch">Salida de comida </h1>
+            </div>
+            <div>
+                <h2 class="horafija">Hora</h2>
+            </div>
+            <div> <i class="fas fa-utensils fa-4x comida-none"></i></div>
+        </section>
+        <section class="checador3-none">
+            <div>
+                <h1 class="exit">Registra tu salida</h1>
+            </div>
+            <div>
+                <h2 class="horafija">Hora</h2>
+            </div>
+            <div> <i class="fas fa-sign-out-alt fa-4x salida-none"></i></div>
+        </section>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
+    <script src="js/alertaBienvenido.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="https://kit.fontawesome.com/0975003bf4.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
